@@ -2,7 +2,7 @@
 
 Front end for the UserChampionStatAggregator (UCSA)
 
-Aggregates stats for champions by summoner name, and number of matches.
+Aggregates stats for champions by summoner name, and number of matches for Riot League of Legends
 
 Uses NextJs, Typescript, Tailwindcss
 <p float="left">
