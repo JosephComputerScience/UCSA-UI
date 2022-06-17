@@ -4,7 +4,7 @@ Front end for the UserChampionStatAggregator (UCSA)
 
 Aggregates stats for champions by summoner name, and number of matches for Riot League of Legends
 
-Before running any yarn commands, install yarn packages:
+<b>Before running any yarn commands, install yarn packages:</b>
 
 run `yarn install`
 
