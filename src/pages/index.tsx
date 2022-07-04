@@ -1,13 +1,17 @@
 // external imports
 import type { NextPage } from 'next';
-import classnames from 'classnames';
 // local imports
-import { Page } from '../components/layout';
+import { Page, PageContent } from '../components/layout';
+import { SummonerDetail } from '../components/SummonerDetail';
+// import fullConfig from '../../tailwind-full.config.js'; for later on
 
 const Home: NextPage = () => {
+  // console.log(fullConfig.theme.screens); gonna need this for later for state handling
   return (
     <Page>
-      <div className={classnames('text-2xl')}>hello</div>
+      <PageContent>
+        <SummonerDetail className='rounded overflow-hidden mb-2 bg-white' />
+      </PageContent>
     </Page>
   );
 };

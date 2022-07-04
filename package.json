@@ -8,8 +8,7 @@
     "clean": "rm -r .next",
     "dev": "next dev",
     "build": "next build",
-    "start:prod": "next start",
-    "start": "nodemon",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
