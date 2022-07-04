@@ -1,11 +1,11 @@
 // external imports
 import Head from 'next/head';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 /**
  * Creates a head tag for application.
  */
-export const Header: FunctionComponent = () => (
+export const Header: FC = () => (
   <Head>
     <title>UCSA</title>
     <meta

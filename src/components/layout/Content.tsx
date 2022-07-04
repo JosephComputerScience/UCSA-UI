@@ -1,17 +1,25 @@
 // external imports
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 // local imports
 import { Header } from './Head';
-import { ChildrenProps } from './Page';
+// types
+import { ChildrenType, StylingType } from '../../models/types';
+
+/**
+ * Content type extending styling and children types
+ */
+interface ContentType extends StylingType, ChildrenType {}
 
 /**
  * Use the Page component for new pages. This setups a head tag.
  */
-export const Content: FunctionComponent<ChildrenProps> = ({ children }) => {
+export const Content: FC<ContentType> = ({ children, className, style }) => {
   return (
     <>
       <Header />
-      <div>{children}</div>
+      <div className={`h-full w-full ${className || ''}`} style={style}>
+        {children}
+      </div>
     </>
   );
 };
