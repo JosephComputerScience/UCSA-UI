@@ -1,15 +1,17 @@
 // external imports
-import { FC, ReactPropTypes } from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
+import classnames from 'classnames';
 // local imports
 import { Avatar } from '../Avatar';
-import classnames from 'classnames';
+// types
+import { StylingType } from '../../models/types';
 
 const renderQuick = [1, 2, 3, 4];
-type SummonerDetail = {
-  className?: string;
-  style?: { [key: string]: string };
-};
+/**
+ * SummonerDetail extends StylingType
+ */
+interface SummonerDetail extends StylingType {}
 /**
  * Detail card for showing summoner info.
  * TODO: Pass src to avatar.

@@ -3,6 +3,9 @@ import { FC } from 'react';
 import Image, { ImageProps } from 'next/image';
 // local imports
 
+/**
+ * Avatar types. The variable objectFit is mandatory.
+ */
 interface AvatarType extends ImageProps {
   objectFit: ImageProps['objectFit'];
 }

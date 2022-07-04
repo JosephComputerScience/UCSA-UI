@@ -2,15 +2,18 @@
 import { FC } from 'react';
 // local imports
 import { Header } from './Head';
+// types
+import { ChildrenType, StylingType } from '../../models/types';
+
+/**
+ * Content type extending styling and children types
+ */
+interface ContentType extends StylingType, ChildrenType {}
 
 /**
  * Use the Page component for new pages. This setups a head tag.
  */
-export const Content: FC<any> = ({
-  children,
-  className,
-  style,
-}) => {
+export const Content: FC<ContentType> = ({ children, className, style }) => {
   return (
     <>
       <Header />

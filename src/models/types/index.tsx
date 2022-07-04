@@ -1,3 +1,4 @@
+// external imports
 import { ReactNode } from 'react';
 
 /**
@@ -5,7 +6,7 @@ import { ReactNode } from 'react';
  */
 export interface StylingType {
   className?: string;
-  style?: { [key: string]: string | number };
+  style?: { [key: string]: any };
 }
 
 /**
