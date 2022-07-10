@@ -37,7 +37,7 @@ export const SummonerDetail: FC<SummonerDetail> = ({ className }) => {
             <div
               key={index}
               className={classnames(
-                'rounded p-px border border-gray-300 bg-gray-200 text-gray-500',
+                'rounded p-px border border-gray-300 bg-white text-gray-500',
                 {
                   'ml-1': index !== 0,
                 }
