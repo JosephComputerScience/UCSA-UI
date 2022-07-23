@@ -28,6 +28,7 @@ export const SummonerDetail: FC<SummonerDetail> = ({ className }) => {
           className='w-full h-full relative'
           src='https://ddragon.leagueoflegends.com/cdn/12.12.1/img/profileicon/5213.png'
           objectFit='cover'
+          priority
         />
       </div>
 
