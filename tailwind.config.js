@@ -13,5 +13,12 @@ module.exports = {
       }
     },
   },
+  safelist: [{
+    pattern: /grid-cols-./,
+  },
+  {
+    pattern: /text-./,
+  }
+  ],
   plugins: [],
 };

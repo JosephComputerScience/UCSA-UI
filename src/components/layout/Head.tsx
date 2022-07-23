@@ -9,9 +9,9 @@ export const Header: FC = () => (
   <Head>
     <title>UCSA</title>
     <meta
-      content="initial-scale=1.0, width=device-width"
-      key="viewport"
-      name="viewport"
+      content='initial-scale=1.0, width=device-width'
+      key='viewport'
+      name='viewport'
     />
   </Head>
 );
