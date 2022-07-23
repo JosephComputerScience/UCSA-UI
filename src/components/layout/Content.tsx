@@ -17,7 +17,7 @@ export const Content: FC<ContentType> = ({ children, className, style }) => {
   return (
     <>
       <Header />
-      <div className={`h-full w-full ${className || ''}`} style={style}>
+      <div className={`min-h-screen w-full ${className || ''}`} style={style}>
         {children}
       </div>
     </>

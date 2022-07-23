@@ -21,10 +21,16 @@ export const Avatar: FC<AvatarType> = ({
   className,
   style,
   objectFit,
+  priority,
 }) => {
   return (
     <div className={className} style={style}>
-      <Image src={src} layout='fill' objectFit={objectFit} />
+      <Image
+        src={src}
+        layout='fill'
+        objectFit={objectFit}
+        priority={priority}
+      />
     </div>
   );
 };
