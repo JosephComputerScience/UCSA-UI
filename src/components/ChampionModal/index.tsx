@@ -62,7 +62,7 @@ export const ChampionModal: FC<ChampionModalType> = ({
               src={`${CHAMPION_SQUARE_ENDPOINT}/${championName}.png`}
               objectFit='contain'
             />
-            <p>{championName}</p>
+            {/* <p>{championName}</p> */}
           </div>
           <div>
             <p>
@@ -78,7 +78,7 @@ export const ChampionModal: FC<ChampionModalType> = ({
             </p>
           </div>
         </div>
-        <div className='relative h-4 w-4 self-end'>
+        <div className='relative h-4 w-4 self-end cursor-pointer'>
           {showDetails ? (
             <Image
               src='/images/chevron-double-up.svg'

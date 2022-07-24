@@ -23,10 +23,13 @@ export const ChampionModalNav: FC<ChampionModalNavType> = ({
       {items.map((item, i) => (
         <div
           key={i}
-          className={classnames(`text-${textAlign} shadow tracking-wide`, {
-            'bg-quaternary': active === item,
-            'font-semibold': active === item,
-          })}
+          className={classnames(
+            `cursor-pointer text-${textAlign} shadow tracking-wide`,
+            {
+              'bg-quaternary': active === item,
+              'font-semibold': active === item,
+            }
+          )}
           onClick={() => {
             setActiveItem(item);
             if (onClickHandler) {

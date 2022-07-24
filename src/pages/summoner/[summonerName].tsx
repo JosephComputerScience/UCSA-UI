@@ -1,12 +1,18 @@
 // external imports
 import { useState } from 'react';
-import type { NextPage } from 'next';
+import { useRouter } from 'next/router';
+import type {
+  NextPage,
+  GetServerSideProps,
+  GetServerSidePropsContext,
+  GetServerSidePropsResult,
+} from 'next';
 // local imports
-import { Page, PageContent } from '../components/layout';
-import { Nav, ItemType } from '../components/Nav';
-import { SummonerDetail } from '../components/SummonerDetail';
-import { ChampionModal } from '../components/ChampionModal';
-// import fullConfig from '../../tailwind-full.config.js'; for later on
+import { Page, PageContent } from '../../components/layout';
+import { Nav, ItemType } from '../../components/Nav';
+import { SummonerDetail } from '../../components/SummonerDetail';
+import { ChampionModal } from '../../components/ChampionModal';
+// import fullConfig from '../../../../tailwind-full.config.js'; for later on
 
 const items = [
   { key: 'WIN_RATE', label: 'Win rate' },
@@ -124,7 +130,8 @@ const championItems = [
   },
 ];
 
-const Home: NextPage = () => {
+const SummonerPage: NextPage = () => {
+  const router = useRouter();
   const [activeNav, setActiveNav] = useState(items[0]);
   // console.log(fullConfig.theme.screens); gonna need this for later for state handling
 
@@ -189,4 +196,11 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export const getServerSideProps: GetServerSideProps = async (
+  context: GetServerSidePropsContext
+): Promise<GetServerSidePropsResult<any>> => {
+  const { query } = context;
+  return { props: {} };
+};
+
+export default SummonerPage;
