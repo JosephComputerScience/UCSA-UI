@@ -204,3 +204,4 @@ export const getServerSideProps: GetServerSideProps = async (
 };
 
 export default SummonerPage;
+
